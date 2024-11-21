@@ -1,3 +1,22 @@
+// Configurando la barra para añadir cantidad de productos.
+
+let minusBtn = document.querySelector('.input_minus');
+let plusBtn = document.querySelector('.input_plus');
+let userInput = document.querySelector('.input_number');
+let userInputNumber = 0;
+
+plusBtn.addEventListener('click', ()=>{
+    userInputNumber++;
+    userInput.value = userInputNumber;
+});
+
+minusBtn.addEventListener('click', ()=>{
+    userInputNumber--;
+    if(userInputNumber < 0){
+        userInputNumber = 0;
+    }
+    userInput.value = userInputNumber;
+});
 
 
 //Mostar el modal de imagenes cuando hago click en la imagen principal.
