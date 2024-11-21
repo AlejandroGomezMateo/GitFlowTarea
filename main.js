@@ -18,6 +18,21 @@ minusBtn.addEventListener('click', ()=>{
     userInput.value = userInputNumber;
 });
 
+//Configurando el boton agregar y ponerlo en el carrito.
+
+const addToCartBtn = document.querySelector('.details_button');
+let cartNotification = document.querySelector('.header_cart--notification');
+let lastValue = parseInt(cartNotification.innerText);
+
+addToCartBtn.addEventListener('click', ()=>{
+
+    lastValue = lastValue + userInputNumber;
+    cartNotification.innerText = lastValue;
+    cartNotification.style.display = 'block';
+    drawProductInModal();
+    
+});
+
 
 //Mostar el modal de imagenes cuando hago click en la imagen principal.
 
