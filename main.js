@@ -51,6 +51,7 @@ cartIconbtn.addEventListener('click', ()=>{
 
 });
 
+
 // Borrar el contenido del carrito;
 
 function deleteProduct(){
@@ -63,6 +64,22 @@ deleteProductBtn.addEventListener('click', ()=>{
 });
 
 }
+
+// Cambiar imagenes cuando se presiones los botones flecha.
+
+const imageContainer = document.querySelector('.gallery_image-container');
+const previusGalleryBtn = document.querySelector('.gallery_previus');
+const nextGalleryBtn = document.querySelector('.gallery_next');
+let imgIndex = 1;
+
+nextGalleryBtn.addEventListener('click', ()=>{
+    changeNextImage(imageContainer);
+});
+
+previusGalleryBtn.addEventListener('click', ()=>{
+    changePreviusImage(imageContainer);
+});
+
 
 //Mostar el modal de imagenes cuando hago click en la imagen principal.
 
