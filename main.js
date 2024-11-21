@@ -33,6 +33,23 @@ addToCartBtn.addEventListener('click', ()=>{
     
 });
 
+//Configurando el detalle del carrito.
+
+const cartIconbtn = document.querySelector('.header_cart');
+const cartModal = document.querySelector('.cart-modal');
+const productContainer = document.querySelector('.cart-modal_checkout-container');
+
+cartIconbtn.addEventListener('click', ()=>{
+    cartModal.classList.toggle('show');
+
+    if(lastValue == 0 ){
+    productContainer.innerHTML = '<p class="cart-empty">Your cart is empty.</P>';
+     
+    }else{
+      drawProductInModal();   
+    }
+
+});
 
 //Mostar el modal de imagenes cuando hago click en la imagen principal.
 
