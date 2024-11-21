@@ -1,0 +1,42 @@
+@use 'initial';
+@use 'variables' as v;
+@use 'header';
+@use 'navbar';
+@use 'modal-navbar';
+@use 'modal-cart';
+@use 'gallery';
+@use 'details';
+@use 'inputs';
+@use 'modal-gallery';
+
+//Vista mobile
+.main-container{
+    width: 375px;
+    //border: 1px solid black;
+    position: relative;
+    margin: auto;
+    
+
+    @media (min-width: 1115px ){
+        width: 1115px;
+    }
+}
+
+.content{
+    @media (min-width: 1115px){
+        display: flex;
+        padding: 90px 50px;
+        gap: 124px
+    }
+}
+
+.show{
+    display: block;
+}
+
+.cart-empty{
+    font-weight: 700;
+    text-align: center;
+    margin-top: 30px;
+    color:  v.$Grayish-blue;
+}

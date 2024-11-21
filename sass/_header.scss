@@ -1,0 +1,87 @@
+@use 'variables';
+
+.header{                                                            //Clase padre
+    //border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    padding: 0 24px;
+    @media (min-width: 1115px){
+        height: 112px;
+        border-bottom: 1px solid variables.$Grayish-blue;
+    }
+
+    &-navigation{                                                   //Clase hija/o
+        // border: 1px solid red;
+        height: 100%;
+        width: 175px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (min-width: 1115px){
+            width: 590px;
+        }
+    }
+
+    &_menu{
+        &:hover{
+            cursor: pointer;
+        }
+
+        @media (min-width: 1115px){
+            display: none;
+        }
+    }
+
+    &_cart-avatar{
+        //border: 1px solid blue;
+        display: flex;
+        align-items: center;
+        width: 70px;
+        justify-content: space-between;
+
+        @media (min-width: 1115px){
+            width: 125px;
+        }
+      
+    }
+
+    &_cart{
+        position: relative;
+        &--notification{
+            display: none;
+            background-color: variables.$Orange;
+            width: 15px;
+            height: 12px;
+            border-radius: 16px;
+            position: absolute;
+            top: -2px;
+            right: -5px;
+            font-size: 0.6em;
+            text-align: center;
+            color: variables.$White;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+
+    &_avatar{
+        width: 24px;
+    }
+    &_avatar{
+        width: 24px;
+        @media (min-width: 1115px){
+            width: 48px;
+        }
+        &:hover{
+            cursor: pointer;
+            border: 2px solid variables.$Orange;
+            border-radius: 50%;
+        }
+    }
+
+}

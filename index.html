@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>E-Sneakers</title>
+
+  <link rel="stylesheet" href="./main.css">
+
+  <style>
+    .attribution { font-size: 14px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="main-container"> 
+    <header class="header">
+     <div class="header-navigation">
+      <img class="header_menu" src="./images/icon-menu.svg" alt="menu icon">
+      <img class="header_logo"  src="./images/logo.svg" alt="logo">
+
+      <nav class="navbar">
+        <ul class="navbar_items">
+          <li><a class="navbar_links" href="#">Collections</a></li>
+          <li><a class="navbar_links" href="#">Men</a></li>
+          <li><a class="navbar_links" href="#">Women</a></li>
+          <li><a class="navbar_links" href="#">About</a></li>
+          <li><a class="navbar_links" href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+     
+      <!--Inicio modal navbar-->
+      <div class="modal-navbar_background">
+
+        <nav class="modal-navbar">
+          <img class="modal-navbar_close-icon"  src="./images/icon-close.svg" alt="close ico"/>
+
+          <ul class="modal_navbar_items">
+            <li><a class="modal_navbar_link" href="#"></a>Collections</li>
+            <li><a class="modal_navbar_link" href="#"></a>Men</li>
+            <li><a class="modal_navbar_link" href="#"></a>Women</li>
+            <li><a class="modal_navbar_link" href="#"></a>About</li>
+            <li><a class="modal_navbar_link" href="#"></a>Contact</li>
+          </ul> 
+
+        </nav>
+
+      </div>
+      <!--final modal navbar-->
+
+       <!--Inicio cart navbar-->
+      <div class="header_cart-avatar">
+
+        <div class="header_cart">
+            <div class="header_cart--notification">0</div>
+            <img src="./images/icon-cart.svg" alt="cart icon">
+        </div>
+        <img class="header_avatar"  src="./images/image-avatar.png" alt="avatar icon">
+      </div>
+    </header>
+
+    <section class="content">
+
+      <article class="gallery">
+
+        <div class="gallery_image-container">
+          <img class="gallery_previus" src="./images/icon-previous.svg" alt="previus">
+          <img class="gallery_next" src="./images/icon-next.svg" alt="next">
+        </div>
+
+        <div class="gallery_thumnails">
+          <img class="gallery_thumnail" id="1" src="./images/image-product-1-thumbnail.jpg" alt="thumnails">
+          <img class="gallery_thumnail" id="2" src="./images/image-product-2-thumbnail.jpg" alt="thumnails">
+          <img class="gallery_thumnail" id="3" src="./images/image-product-3-thumbnail.jpg" alt="thumnails">
+          <img class="gallery_thumnail" id="4" src="./images/image-product-4-thumbnail.jpg" alt="thumnails">
+        </div>
+
+      </article>
+
+      <article class="details">
+
+        <h2 class="details_company">Sneaker Company</h2>
+        <h2 class="details_title">Fall Limited Edition Sneakers </h2>
+        <p class="details_description">Recognizing the Dunk's roots as the top-ranking college team sneaker, the "Be True To Your School" pack looks to the original ad campaign for inspiration.</p>
+
+        <div class="details_prices">
+          <p class="details_now">$125.00 <span class="details_discount">50%</span></p>
+          <p class="details_before">$250.00</p>
+        </div>
+
+      <div class="details_product-quantity">
+        <div class="input">
+          <img class="input_minus" src="./images/icon-minus.svg" alt="minus">
+          <input class="input_number" type="text" value="0"> 
+          <img class="input_plus" src="./images/icon-plus.svg" alt="plus">
+        </div>
+          <button class="details_button"> <img src="./images/icon-cart-white.svg" alt="cart">Add to cart</button>
+      </div>
+
+      </article>
+
+    </section>
+
+    <div class="cart-modal">
+      <p class="cart-modal_title">Cart</p>
+      <div class="cart-modal_checkout-container">
+        <div class="cart-modal_details-container">
+          <img class="cart-modal_image" src="./images/image-product-1-thumbnail.jpg" alt="">
+        <div>
+          <p class="cart-modal_product">Autum Limited Edition...</p>
+          <p class="cart-modal_price">$125 x3 <span>$375.00</span></p>
+        </div>
+          <img class="cart-modal_delete" src="./images/icon-delete.svg" alt="delete">
+        </div>
+        <button class="cart-modal_checkout">Checkout</button>
+      </div>
+    </div>
+    <!-- Fin cart navbar-->
+  </main>
+
+  <footer class="attribution">
+    Coded by <a href="https://github.com/AlejandroGomezMateo" target="_blank">GMAlejandro</a>
+  </footer>
+
+    <!--Inicio galery modal-->
+    <div class="modal-gallery_background">
+      <article class="modal-gallery">
+        <div class="modal-gallery_close-container">
+          <img class="modal-gallery_close" src="./images/icon-close.svg" alt="close">
+        </div>
+        <div class="modal-gallery_image-container">
+          <img class="modal-gallery_previus" src="./images/icon-previous.svg" alt="previus">
+          <img class="modal-gallery_next" src="./images/icon-next.svg" alt="next">
+        </div>
+        <div class="modal-gallery_thumnails">
+          <img id="m1" class="modal-gallery_thumnail" src="./images/image-product-1-thumbnail.jpg" alt="thumnails">
+          <img id="m2" class="modal-gallery_thumnail"  src="./images/image-product-2-thumbnail.jpg" alt="thumnails">
+          <img id="m3" class="modal-gallery_thumnail"  src="./images/image-product-3-thumbnail.jpg" alt="thumnails">
+          <img id="m4" class="modal-gallery_thumnail"  src="./images/image-product-4-thumbnail.jpg" alt="thumnails">
+        </div>
+      </article>
+    </div>
+    <!--Fin galery modal-->
+
+    <script src="./main.js"></script>
+  </div>
+</body>
+</html>

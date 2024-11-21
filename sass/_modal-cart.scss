@@ -1,0 +1,56 @@
+@use 'variables' as v;
+@use 'mixins';
+
+.cart-modal{
+    //border: 1px solid blue;
+    display: none;
+    width: 360px;
+    height: 260px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px;
+    position: absolute;
+    top: 75px;
+    right: 6px;
+    background-color: v.$White;
+    &_title{
+        font-weight: 700;
+        padding: 24px;
+        border-bottom: 1px solid v.$Grayish-blue;
+    }
+
+    &_checkout-container{
+        //border: 1px solid red;
+        padding: 24px;
+    }
+    
+    &_details-container{
+        //border: 1px solid blue;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        color: v.$Dark-grayish-blue;
+    }
+
+    &_image{
+        width: 50px;
+        border-radius: 4px;
+    }
+
+    &_price span{
+        font-weight: 600;
+        color: v.$Black;
+    }
+
+    &_delete{
+
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &_checkout{
+        @include mixins.button;
+    }
+}
