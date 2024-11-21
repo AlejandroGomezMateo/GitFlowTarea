@@ -51,6 +51,19 @@ cartIconbtn.addEventListener('click', ()=>{
 
 });
 
+// Borrar el contenido del carrito;
+
+function deleteProduct(){
+    const deleteProductBtn = document.querySelector('.cart-modal_delete');
+
+deleteProductBtn.addEventListener('click', ()=>{
+    productContainer.innerHTML = '<p class="cart-empty">Your cart is empty.</P>';
+    lastValue = 0;
+    cartNotification.innerText = lastValue;
+});
+
+}
+
 //Mostar el modal de imagenes cuando hago click en la imagen principal.
 
 const imagesModal = document.querySelector('.modal-gallery_background');
